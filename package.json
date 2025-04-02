@@ -1,0 +1,43 @@
+{
+  "name": "weather-api",
+  "version": "1.0.0",
+  "description": "A Node.js API that serves as a wrapper for the Visual Crossing Weather API with in-memory caching",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "node test-api.js",
+    "test-network": "node simple-test.js",
+    "test:debug": "node --inspect index.js",
+    "cli": "node cli-weather.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VenislavChakarov/Wheather-API.git"
+  },
+  "keywords": [
+    "weather",
+    "api",
+    "caching",
+    "node-cache",
+    "node"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VenislavChakarov/Wheather-API/issues"
+  },
+  "homepage": "https://github.com/VenislavChakarov/Wheather-API#readme",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "express-rate-limit": "^7.2.0",
+    "helmet": "^7.1.0",
+    "node-cache": "^5.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
